@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+/*--MenuIntroDessin--*/
+#Calque_2 {
+top: -130px;
+height: 80%;
+position: relative;
+}
+.oiseaux {
+cursor: pointer;
+animation: opacity 2s ease-in-out infinite;
+}
+
+@keyframes opacity {
+0% {
+opacity: 0;
+}
+50% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+
+.oiseaux path:hover{
+fill: white;
+}
+
+
+/*--FinMenuIntroDessin--*/
+header{
+background-color: beige;
+height: 100%;
+width: 100%;
+}
+body{
+text-align: justify;
+margin: auto;
+margin: 0;
+padding: 0;
+background-color: white;
+}
+footer{
+background-color: #81d3da;
+color: white;
+font-family: 'Century Gothic', sans-serif;
+text-decoration: none;
+text-align: center;
+font-weight: bold;
+padding: 5%;
+
+}
+
+#blackout {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #81d3da;
+animation: fadeOut 7s linear forwards;
+z-index: 1005;
+}
+@keyframes fadeOut {
+0% {
+opacity: 1;
+}
+50% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+@media screen and (max-width: 768px) {
+.texte-presentation p{
+font-size: medium;
+}
+}
+#Calque_1 {
+width: 80%;
+height: 80%;
+transform: translate(-50%, -50%);
+position: relative;
+top: 50%;
+left: 50%;
+}
+
+
+.negelogo {
+fill: white;
+opacity: 0;
+animation-name: fadeIn;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+animation: fadeOut 3s linear forwards;
+}
+
+.negelogo:nth-child(1) {
+animation-delay: 0.7s;
+}
+
+.negelogo:nth-child(2) {
+animation-delay: 0.7s;
+}
+
+.negelogo:nth-child(3) {
+animation-delay: 0.4s;
+}
+
+.negelogo:nth-child(4) {
+animation-delay: 0.8s;
+}
+
+.negelogo:nth-child(5) {
+animation-delay: 1s;
+}
+
+.negelogo:nth-child(6) {
+animation-delay: 0.3s;
+}
+
+.negelogo:nth-child(7) {
+animation-delay: 0.8s;
+}
+
+.negelogo:nth-child(8) {
+animation-delay: 0.7s;
+}
+
+.negelogo:nth-child(9) {
+animation-delay: 0.8s;
+}
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+/*---Presentation---*/
+.texte-presentation  {
+background-color: white;
+font-family: 'Century Gothic', sans-serif;
+text-align: center;
+background-color: #81d3da;
+background-size: cover;
+padding: 5%;
+}
+
+.texte-presentation p {
+font-size: x-large;
+font-family: 'Century Gothic', sans-serif;
+background: rgba(255, 255, 255, 0.3);
+color: white;
+border: solid px white;
+padding: 5%;
+margin-top: 1em;
+}
+/*--Fin Présentation--*/
+
+@media screen and (max-width: 768px) {
+.texte-presentation p{
+font-size: medium;
+}
+}
+/* Navbar */
+::-webkit-scrollbar {
+width: 10px
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1
+}
+::-webkit-scrollbar-thumb {
+background: #888
+}
+::selection {
+background: rgb(0,123,255,.3)
+}
+.content {
+max-width: 1250px;
+margin: auto;
+padding: 0 30px
+}
+.navbar {
+position: fixed;
+width: 100%;
+z-index: 2;
+padding: 25px 0;
+transition: all .3s ease
+}
+.navbar.sticky {
+background: #81d3da;
+padding: 10px 0;
+box-shadow: 0 3px 5px 0 rgba(0,0,0,.1)
+}
+.navbar .content {
+display: flex;
+align-items: center;
+justify-content: space-between
+}
+.navbar .logo a {
+color: #fff;
+font-size: 30px;
+font-weight: 600;
+text-decoration: none;
+font-family: 'Century Gothic', sans-serif;
+}
+.navbar .menu-list {
+display: inline-flex
+}
+.menu-list li {
+list-style: none
+}
+.menu-list li a {
+color: #fff;
+font-size: 18px;
+font-weight: 500;
+margin-left: 25px;
+text-decoration: none;
+transition: all .3s ease;
+font-family: 'Century Gothic', sans-serif;
+font-weight: bold;
+}
+.menu-list li a:hover {
+color: #da5252
+}
+.about {
+padding: 30px 0
+}
+.about .title {
+font-size: 38px;
+font-weight: 700
+}
+.about p {
+padding-top: 20px;
+text-align: justify
+}
+.icon {
+color: #fff;
+font-size: 20px;
+cursor: pointer;
+display: none
+}
+.menu-list .cancel-btn {
+position: absolute;
+right: 30px;
+top: 20px
+}
+@media (max-width:1230px) {
+.content {
+padding: 0 60px
+}
+}
+@media (max-width:1100px) {
+.content {
+padding: 0 40px
+}
+}
+@media (max-width:900px) {
+.content {
+padding: 0 30px
+}
+}
+@media (max-width:868px) {
+body.disabled {
+overflow: hidden
+}
+.icon {
+display: block
+}
+.icon.hide {
+display: none
+}
+.navbar .menu-list {
+position: fixed;
+height: 100vh;
+width: 100%;
+max-width: 400px;
+left: -100%;
+top: 0;
+display: block;
+padding: 40px 0;
+text-align: center;
+background: #81d3da;
+transition: all .3s ease
+}
+.navbar.show .menu-list {
+left: 0
+}
+.navbar .menu-list li {
+margin-top: 45px
+}
+.navbar .menu-list li a {
+font-size: 23px;
+margin-left: -100%;
+transition: .6s cubic-bezier(.68, -.55, .265, 1.55)
+}
+.navbar.show .menu-list li a {
+margin-left: 0
+}
+}
+@media (max-width:380px) {
+.navbar .logo a {
+font-size: 27px
+}
+}
+/* Styles de base pour la section contact */
+section#contact {
+max-width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 2%;
+background-color: #81d3da;
+}
+
+section#contact form {
+display: flex;
+flex-direction: column;
+font-family: 'Century Gothic', sans-serif;
+color: white;
+}
+
+section#contact label,
+section#contact input,
+section#contact textarea {
+width: 100%;
+margin-bottom: 0.5rem;
+}
+
+.formulaire{
+border-radius: 10px;
+border: solid 2px white;
+height: 3em;
+font-family: 'Century Gothic', sans-serif;
+color: #81d3da;
+font-weight: bold;
+}
+
+.formulaire-message{
+border-radius: 10px;
+border: solid 2px white;
+height: 5em;
+font-family: 'Century Gothic', sans-serif;
+color: #81d3da;
+font-weight: bold;
+}
+
+.envoyer {
+border-radius: 10px;
+border: solid 2px white;
+height: 5em;
+background-color: #81d3da;
+color: white;
+font-family: 'Century Gothic', sans-serif;
+font-weight: bold;
+}
+
+.envoyer:hover {
+background-color: white;
+color: #81d3da;
+}
+
+
+section#contact input[type="submit"] {
+align-self: flex-end;
+cursor: pointer;
+}
+
+.coordonées {
+text-align: center;
+padding: 2%;
+font-family: 'Century Gothic', sans-serif;
+font-weight: bold;
+text-decoration: none;
+color: white;
+}
+
+.coordonées:hover {
+color: #abcadb;
+}
+
+#logo-coordonnées{
+text-align: center;
+color: white;
+font-size: x-large;
+}
+
+
+/* Styles pour les écrans mobiles */
+@media screen and (max-width: 768px) {
+section#contact {
+padding: 1rem;
+}
+}
+/*Style pour l'équipe*/
+.equipebloc{
+text-align: center;
+padding: 5%;
+}
+
+.equipe_nege{
+width: auto;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.equipe_nege .membre{
+width: 250px;
+margin: 5px;
+background: #fff;
+padding: 20px 10px;
+}
+
+.equipe_nege .membre .photo_membre{
+background: #81d3da;  
+max-width: 190px;
+width: 100%;
+height: 190px;
+margin: 0 auto;
+border-radius: 50%;
+padding: 5px;
+position: relative;
+cursor: pointer;
+}
+
+.equipe_nege .membre .photo_membre img{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+}
+
+.equipe_nege .membre h3{
+text-transform: uppercase;
+font-size: 18px;
+line-height: 18px;
+letter-spacing: 2px;
+margin: 15px 0 0px;
+font-family: 'Century Gothic', sans-serif;
+}
+
+.equipe_nege .membre span{
+font-size: 10px;
+font-family: 'Century Gothic', sans-serif;
+}
+
+.equipe_nege .membre p{
+margin-top: 20px;
+font-size: 14px;
+line-height: 20px;
+font-family: 'Century Gothic', sans-serif;
+}
+
+.equipe_nege .membre .photo_membre .reseaux_sociaux{
+position: absolute;
+top: 5px;
+left: 5px;
+background: rgba(0,0,0,0.65);
+width: 95%;
+height: 95%;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+transform: scale(0);
+transition: all 0.5s ease;
+}
+
+.equipe_nege .membre .photo_membre .reseaux_sociaux .item{
+margin: 0 10px;
+}
+
+.equipe_nege .membre .photo_membre .reseaux_sociaux .fab{
+color: #81d3da;
+font-size: 20px;
+}
+
+.equipe_nege .membre .photo_membre:hover .reseaux_sociaux{
+transform: scale(1);
+}
+/*----service----*/
+
+.services{
+background: white;
+text-align: center;
+padding: 5%;
+}
+.cen{
+max-width: 1200px;
+margin: auto;
+overflow: hidden;
+padding: 20px;
+}
+.service{
+display: inline-block;
+width: calc(100%/3);
+margin: 0 -2px;
+padding: 20px;
+box-sizing: border-box;
+cursor: pointer;
+transition: 0.4s;
+}
+.service:hover{
+background: #EEE9DA;
+}
+.service i {
+color: #81d3da;
+font-size: 34px;
+margin-bottom: 30px;
+}
+.service h2{
+font-size: 18px;
+text-transform: uppercase;
+font-weight: 500;
+margin: 0;
+font-family: 'Century Gothic', sans-serif;
+}
+.service p {
+color: gray;
+font-size: 15px;
+font-weight: 500;
+font-family: 'Century Gothic', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+.service{
+width: 50%;
+}
+}
+
+@media screen and (max-width: 500px) {
+.service{
+width: 100%;
+}
+}
+
+/*SVG*/
+/*---Slider---*/
+
+/* General styling */
+
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Demo styles end */
+
+/*--realisations--*/
+.gallery-wrapper {
+display: flex;
+margin-top: 2%;
+}
+.gallery-item {
+position: relative;
+isolation: isolate;
+display: flex;
+flex: 1;
+height: 500px;
+background-color: #000;
+padding: 25px;
+opacity: 1;
+overflow: hidden;
+transition: flex 0.5s, opacity 0.25s;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+.gallery-item:hover {
+opacity: 1;
+flex: 5;
+}
+.gallery-item:not(:hover) {
+opacity: 0.75;
+}
+.item-image {
+position: absolute;
+top: 0;
+right: 0;
+z-index: -1;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.item-description {
+align-self: flex-end;
+text-transform: uppercase;
+color: #fff;
+}
+.name {
+font-size: 37px;
+padding-inline: 10px;
+transform: translateY(-10px);
+font-family: 'Century Gothic', sans-serif;
+
+}
+.name {
+opacity: 0;
+transition: opacity 0.25s, transform 0.3s;
+transition-delay: 0.35s;
+font-family: 'Century Gothic', sans-serif;
+}
+.gallery-item:hover .name,
+.gallery-item:hover {
+opacity: 1;
+transform: translateY(0);
+}
+.gallery-item:not(:hover) .name,
+.gallery-item:not(:hover) {
+transition-delay: 0s;
+}
+@media screen and (max-width: 768px) {
+.gallery-wrapper {
+flex-direction: column;
+height: 90vh;
+}
+
+.gallery-item:hover {
+flex-basis: 100%;
+}
+}
+
+/*---Titres---*/
+
+.titre-bleue{
+display: inline-block;
+text-transform: uppercase;
+border-bottom: 4px solid #81d3da;
+font-size: 20px;
+padding-bottom: 10px;
+margin-top: 40px;
+font-family: 'Secular One', sans-serif;
+color:#81d3da;
+}
+.titre-blanc{
+display: inline-block;
+text-transform: uppercase;
+border-bottom: 4px solid white;
+font-size: 20px;
+padding-bottom: 10px;
+margin-top: 40px;
+font-family: 'Secular One', sans-serif;
+color: white;
+}
+
+/*MenuCarte*/
+
+.menuprincipal {
+position: absolute;
+top: 10px;
+left: 10px;
+z-index: 1;
+text-decoration: none;
+left: 50%;
+transform: translate(-50%, -50%);
+top: 5%;
+color: white;
+font-family: 'Secular One', sans-serif;
+padding-left: 1em;
+padding-right: 1em;
+cursor: pointer;
+background-color: #abcadb;
+border-radius: 20px;
+}
+.menuprincipal:hover {
+color: white;
+background-color: #6096B4;
+}
+
+.menuprincipal p {
+text-align: justify;
+}
